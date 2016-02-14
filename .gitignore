@@ -1,0 +1,10 @@
+# maven files
+target/
+
+# intellij files
+.idea/
+*.iml
+
+# app log files
+logs/
+
