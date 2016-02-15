@@ -1,17 +1,8 @@
-A sample project using the following technologies,
+A sample Spring Boot application.
 
-- Maven
-- Spring
-- Spring MVC
-- Tomcat
-- Hibernate
-- HSQLDB
-- REST
-- jQuery
-- Bootstrap
-- JUnit
-- Mockito
-- Logback
+This is work done on top of the Spring application found at [spectre](https://github.com/amaljoyc/spectre)
 
 
 To run/execute the project, use the file run.sh as `./run.sh`
+
+To access the web application, goto `http://localhost:8080/spectre/`
