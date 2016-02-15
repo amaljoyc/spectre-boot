@@ -1,22 +1,14 @@
 package com.amaljoyc.config;
 
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
-public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+@SpringBootApplication(scanBasePackages = "com.amaljoyc")
+public class AppInitializer {
 
-	@Override
-	protected Class<?>[] getServletConfigClasses() {
-		return new Class[] { WebConfig.class };
-	}
-
-	@Override
-	protected String[] getServletMappings() {
-		return new String[] { "/" };
-	}
-
-	@Override
-	protected Class<?>[] getRootConfigClasses() {
-		return new Class[] { HibernateConfig.class, ServiceConfig.class };
-	}
+    public static void main(String[] args) {
+        ApplicationContext ctx = SpringApplication.run(AppInitializer.class, args);
+    }
 
 }

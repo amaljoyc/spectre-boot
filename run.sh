@@ -1,1 +1,1 @@
-mvn clean install tomcat7:run
+mvn clean install && java -jar web-app/target/spectre-web-app.war
