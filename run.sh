@@ -1,1 +1,6 @@
-mvn clean install && java -jar web-app/target/spectre-web-app.war
+#!/usr/bin/env bash
+
+mvn clean install
+pushd web-app
+mvn spring-boot:run
+popd
